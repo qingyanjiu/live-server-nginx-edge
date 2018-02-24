@@ -12,6 +12,8 @@ RUN apk add --no-cache curl git unzip xz g++ gcc make irssi tar zsh wget
 
 #ADD ttyjs-config.json /
 
+ADD start.sh /web/
+
 # Install oh-my-zsh
 RUN git clone --depth=1 git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh \
         && cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
@@ -71,6 +73,9 @@ EXPOSE 80
 
 EXPOSE 1935
 
-RUN chmod +x start.sh
+RUN chmod +x /web/start.sh
+
+WORKDIR /web
 
 CMD ./start.sh
+
