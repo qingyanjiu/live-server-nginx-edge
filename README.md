@@ -15,7 +15,7 @@ live-config
 
 *so we added a custom ENV in dockerfile:
 
-docker run -d -p 1935:1935 -p 8099:80 -e CALLBACK_URL=http:\/\/localhost:8000 ...
+docker run -d -p 1935:1935 -p 8099:80 -e CALLBACK_URL="http:\/\/localhost:8000" IMAGENAME
 
 please notice that 
 
