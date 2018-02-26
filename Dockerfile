@@ -77,5 +77,5 @@ RUN chmod +x /web/start.sh
 
 WORKDIR /web
 
-CMD ./start.sh
+CMD ./start.sh $CALLBACK_URL
 

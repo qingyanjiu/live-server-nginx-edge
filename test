@@ -173,8 +173,8 @@ rtmp {
             hls_path /tmp/hls;     
             drop_idle_publisher 10s;
 
-            on_publish CALLBACK_URL/startLive;
-            on_publish_done CALLBACK_URL/endLive;
+            on_publish CALLBACKURL/startLive;
+            on_publish_done CALLBACKURL/endLive;
             #on_publish_done http://127.0.0.1:5000/live/endrecord;
             #on_record_done http://127.0.0.1:5000/live/endrecord;
             
