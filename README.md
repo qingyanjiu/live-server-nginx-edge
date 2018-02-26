@@ -19,7 +19,7 @@ docker run -d -p 1935:1935 -p 8099:80 -e CALLBACK_URL=http:\/\/localhost:8000 ..
 
 please notice that 
 
-1. [\\] symbol need to be changed to [\\/\]
+1. [/] symbol need to be changed to [\\/\]
 
 2. the url dont need to end with [/]
 
