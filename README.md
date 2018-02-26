@@ -13,7 +13,7 @@ live-config
 
 *we need to use live server callback api to sychronize live status in database
 
-*so we added a custom EVN in dockerfile:
+*so we added a custom ENV in dockerfile:
 
 docker run -d -p 1935:1935 -p 8099:80 -e CALLBACK_URL=http:\/\/localhost:8000 ...
 
