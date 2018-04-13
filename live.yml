@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  live:
+    image: alaien/live-server-nginx-edge
+    ports:
+      - 1935:1935
+      - 8099:80
+    deploy:
+      placement:
+        constraints:
+          - node.role==worker
+      restart_policy:
+        condition: on-failure
+    environment:
+      - CALLBACK_URL=null
