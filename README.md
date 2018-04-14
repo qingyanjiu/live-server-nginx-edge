@@ -1,9 +1,9 @@
 # live-server-nginx-edge
 nginx edge live server which pull stream from nginx live server
                   
-======================================================================================                      
-live-server  -------> (pull) edge-server1/edge-server2/edge-server3  --------  Users
-====================================================================================== 
+             
+live-server ----> (pull) edge-server1/edge-server2...  ----  Users
+
 
 all services:
 
