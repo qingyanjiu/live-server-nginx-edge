@@ -1,9 +1,13 @@
-# live-server-nginx
-nginx live server for pushing stream
+# live-server-nginx-edge
+nginx edge live server which pull stream from nginx live server
+                  
+             
+live-server ----> (pull) edge-server1/edge-server2...  ----  Users
+
 
 all services:
 
-<b>live-server-nginx</b>
+live-server-nginx
 
 live-server-callback
 
@@ -11,16 +15,16 @@ live-client-springboot
 
 live-config
 
+<b>live-server-nginx-edge</b>
+
 *we need to use live server callback api to sychronize live status in database
 
 *so we added a custom ENV in dockerfile:
 
-docker run -d -p 1935:1935 -p 8099:80 -e CALLBACK_URL="http:\/\/localhost:8000" IMAGENAME
+docker run -d -p 1935:1935 -p 8099:80 -e PULL_URL="xxx.xxx.xxx.xxx" IMAGENAME
 
 please notice that 
 
 1. [/] symbol need to be changed to [\\/\]
 
 2. the url dont need to end with [/]
-
-3. url only support http so far
