@@ -15,12 +15,10 @@ live-config
 
 *so we added a custom ENV in dockerfile:
 
-docker run -d -p 1935:1935 -p 8099:80 -e CALLBACK_URL="http:\/\/localhost:8000" IMAGENAME
+docker run -d -p 1935:1935 -p 8099:80 -e PULL_URL="xxx.xxx.xxx.xxx" IMAGENAME
 
 please notice that 
 
 1. [/] symbol need to be changed to [\\/\]
 
 2. the url dont need to end with [/]
-
-3. url only support http so far
