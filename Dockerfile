@@ -42,15 +42,15 @@ RUN mkdir ffmpeg
 
 RUN tar xvf ffmpeg.tar -C ffmpeg --strip-components 1
 
-RUN git clone git://github.com/arut/nginx-rtmp-module.git
+RUN git clone https://github.com/winshining/nginx-http-flv-module.git 
 
-RUN wget http://nginx.org/download/nginx-1.9.0.tar.gz
+RUN wget http://nginx.org/download/nginx-1.13.6.tar.gz
 
-RUN tar xzf nginx-1.9.0.tar.gz
+RUN tar xzf nginx-1.13.6.tar.gz
 
-WORKDIR /nginx-1.9.0
+WORKDIR /nginx-1.13.6
 
-RUN ./configure --add-module=/nginx-rtmp-module --add-module=/ngx_cache_purge-master --add-module=/nginx_mod_h264_streaming-2.2.7 --with-http_xslt_module --with-http_stub_status_module --with-http_ssl_module --with-http_sub_module --with-http_gzip_static_module --with-http_flv_module
+RUN ./configure --add-module=/nginx-http-flv-module --add-module=/ngx_cache_purge-master --add-module=/nginx_mod_h264_streaming-2.2.7 --with-http_xslt_module --with-http_stub_status_module --with-http_ssl_module --with-http_sub_module --with-http_gzip_static_module --with-http_flv_module
 
 #修改nginx安装目录下的objs下的Makefile 删除-Werror
 RUN sed -i "s/-Werror/ /g" objs/Makefile
@@ -59,7 +59,7 @@ RUN make
 
 RUN make install
 
-COPY nginx.conf /nginx-1.9.0/conf/nginx.conf
+COPY nginx.conf /nginx-1.13.6/conf/nginx.conf
 
 COPY nclients.xsl /usr/local/nginx/html/
 
