@@ -4,9 +4,13 @@
 
 整个服务包含：<br/>
 1.<a href="https://github.com/qingyanjiu/live-server-nginx-edge">live-server-nginx-edge</a>(master是rtmp直播，http-flv支持http-flv媒体直播)<br/>
+对应的docker镜像：<a href="https://hub.docker.com/r/alaien/live-server-nginx-edge/">alaien/live-server-nginx-edge</a><br/>
 2.<a href="https://github.com/qingyanjiu/live-server-callback">live-server-callback</a>(监听直播的开播停播事件，做一些数据库更新处理)<br/>
+对应的docker镜像：<a href="https://hub.docker.com/r/alaien/mokulive-server-callback/">alaien/mokulive-server-callback</a><br/>
 3.<a href="https://github.com/qingyanjiu/live-client-springboot">live-client-springboot</a>(基于spring-boot的直播客户端，master支持rtmp直播，http-flv支持http-flv直播)<br/>
+对应的docker镜像：<a href="https://hub.docker.com/r/alaien/live-client-springboot/">alaien/live-client-springboot</a><br/>
 4.<a href="https://github.com/qingyanjiu/live-config">live-config</a>(基于spring-cloud的config服务器，用于统一配置所有spring服务需要的配置文件)<br/>
+对应的docker镜像：<a href="https://hub.docker.com/r/alaien/live-config/">alaien/live-config</a><br/>
 
 PS: 服务端的组织方式请参考 <a href="https://github.com/qingyanjiu/mokulive-compose">mokulive-compose</a><br/>
 
