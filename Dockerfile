@@ -43,6 +43,7 @@ RUN mkdir ffmpeg
 RUN tar xvf ffmpeg.tar -C ffmpeg --strip-components 1
 
 RUN git clone https://github.com/winshining/nginx-http-flv-module.git 
+RUN git clone git://github.com/arut/nginx-rtmp-module.git
 
 RUN wget http://nginx.org/download/nginx-1.13.6.tar.gz
 
