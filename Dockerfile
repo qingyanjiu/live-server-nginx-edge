@@ -48,7 +48,7 @@ RUN wget http://nginx.org/download/nginx-1.13.6.tar.gz
 
 RUN tar xzf nginx-1.13.6.tar.gz
 
-WORKDIR /nginx-1.13.6
+WORKDIR /nginx-1.13.6 
 
 RUN ./configure --add-module=/nginx-http-flv-module --add-module=/ngx_cache_purge-master --add-module=/nginx_mod_h264_streaming-2.2.7 --with-http_xslt_module --with-http_stub_status_module --with-http_ssl_module --with-http_sub_module --with-http_gzip_static_module --with-http_flv_module
 
