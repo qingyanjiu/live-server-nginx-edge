@@ -1,4 +1,7 @@
 # live-server-nginx-edge
+
+直播边缘服务器，用于从中心服务器拉取直播流供用户观看，可以做集群
+
 nginx edge live server which pull stream from nginx live server
                   
              
