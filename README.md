@@ -8,6 +8,8 @@
 3.<a href="https://github.com/qingyanjiu/live-client-springboot">live-client-springboot</a>(基于spring-boot的直播客户端，master支持rtmp直播，http-flv支持http-flv直播)<br/>
 4.<a href="https://github.com/qingyanjiu/live-config">live-config</a>(基于spring-cloud的config服务器，用于统一配置所有spring服务需要的配置文件)<br/>
 
+PS: 服务端的组织方式请参考 <a href="https://github.com/qingyanjiu/mokulive-compose">mokulive-compose</a><br/>
+
 nginx edge live server which pull stream from nginx live server
                   
              
