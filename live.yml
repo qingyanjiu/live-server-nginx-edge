@@ -3,7 +3,7 @@ services:
   live:
     image: alaien/live-server-nginx-edge:http-flv
     ports:
-      - 8099:80
+      - 8880:80
     deploy:
       mode: global
       placement:
