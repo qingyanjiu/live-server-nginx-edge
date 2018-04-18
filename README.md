@@ -11,6 +11,8 @@
 对应的docker镜像：<a href="https://hub.docker.com/r/alaien/live-client-springboot/">alaien/live-client-springboot</a><br/>
 4.<a href="https://github.com/qingyanjiu/live-config">live-config</a>(基于spring-cloud的config服务器，用于统一配置所有spring服务需要的配置文件)<br/>
 对应的docker镜像：<a href="https://hub.docker.com/r/alaien/live-config/">alaien/live-config</a><br/>
+5.<a href="https://github.com/qingyanjiu/live-server-nginx">live-server-nginx</a>(基于rtmp-nginx的直播源服务器，用于接收用户的推流[通过obs等软件])<br/>
+对应的docker镜像：<a href="https://hub.docker.com/r/alaien/mokulive-nginxserver/">alaien/mokulive-nginxserver</a><br/>
 
 PS: 服务端的组织方式请参考 <a href="https://github.com/qingyanjiu/mokulive-compose">mokulive-compose</a><br/>
 
