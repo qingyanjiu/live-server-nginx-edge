@@ -2,6 +2,8 @@
 
 直播边缘服务器，用于从中心服务器拉取直播流供用户观看，可以做集群
 
+![mokulive picture](https://raw.githubusercontent.com/qingyanjiu/live-server-nginx-edge/http-flv/mokulive.png)
+
 整个服务包含：<br/>
 1.<a href="https://github.com/qingyanjiu/live-server-nginx-edge">live-server-nginx-edge</a>(master是rtmp直播，http-flv支持http-flv媒体直播)<br/>
 对应的docker镜像：<a href="https://hub.docker.com/r/alaien/live-server-nginx-edge/">alaien/live-server-nginx-edge</a><br/>
