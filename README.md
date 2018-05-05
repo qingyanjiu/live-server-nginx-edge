@@ -49,6 +49,6 @@ please notice that
 2. the url dont need to end with [/]
 
 
-*关于spring config修改后通过rabbitmq来实现自动更新项目配置的方法请参考以下链接：<br/>
+*关于spring config的配置变量值修改后通过rabbitmq来实现自动更新项目配置的方法请参考以下链接：<br/>
 http://www.mamicode.com/info-detail-1932516.html <br/>
 http://www.itmuch.com/spring-cloud/spring-cloud-bus-auto-refresh-configuration/ <br/>
