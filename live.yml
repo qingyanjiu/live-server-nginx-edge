@@ -20,6 +20,9 @@ services:
       - 80:8000
     deploy:
       mode: global
+      update_config:
+        parallelism: 1
+        delay: 60s
       placement:
         constraints:
           - node.role==worker
