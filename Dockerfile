@@ -75,6 +75,8 @@ EXPOSE 1935
 
 RUN chmod +x /web/start.sh
 
+RUN chmod -R 777 /usr/local/nginx
+
 WORKDIR /web
 
 CMD ./start.sh
