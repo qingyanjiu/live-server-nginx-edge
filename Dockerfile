@@ -1,5 +1,7 @@
 FROM alpine
 
+USER root
+
 ADD Shanghai /etc/localtime
 
 #ADD repositories /etc/apk/repositories
