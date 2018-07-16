@@ -77,7 +77,9 @@ EXPOSE 1935
 
 RUN chmod +x /web/start.sh
 
+RUN sed -i "s/PULL_URL/$PULL_URL/g"  /nginx-1.13.6/conf/nginx.conf
+
 WORKDIR /web
 
-CMD ./start.sh $PULL_URL
+CMD ./start.sh
 
