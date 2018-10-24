@@ -29,7 +29,7 @@ all services:
 
 live-server-nginx
 
-<s>live-server-callback<s>
+<s>live-server-callback</s>
 
 live-client-springboot
 
